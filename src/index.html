@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <meta name="description" content="sample text">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./assets/css/sanitize.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+  <div id="header"></div>
+  <main>
+    <section class="section">
+      <div class="grid grid-col-4">
+        <div class="grid-item">
+          4by4-0
+        </div>
+        <div class="grid-item">
+          4by4-1
+        </div>
+        <div class="grid-item">
+          4by4-2
+        </div>
+        <div class="grid-item">
+          4by4-3
+        </div>
+        <div class="grid-item">
+          4by4-4
+        </div>
+        <div class="grid-item">
+          4by4-5
+        </div>
+        <div class="grid-item">
+          4by4-6
+        </div>
+        <div class="grid-item">
+          4by4-7
+        </div>
+        <div class="grid-item">
+          4by4-8
+        </div>
+        <div class="grid-item">
+          4by4-9
+        </div>
+        <div class="grid-item">
+          4by4-10
+        </div>
+        <div class="grid-item">
+          4by4-11
+        </div>
+      </div>
+      <div class="grid grid-col-2">
+        <div class="grid-item">
+          2by2-0
+        </div>
+        <div class="grid-item">
+          2by2-1
+        </div>
+      </div>
+      <div class="grid grid-col-6">
+        <div class="grid-item">
+          6by1-0
+        </div>
+        <div class="grid-item">
+          6by1-1
+        </div>
+        <div class="grid-item">
+          6by1-2
+        </div>
+        <div class="grid-item">
+          6by1-3
+        </div>
+        <div class="grid-item">
+          6by1-4
+        </div>
+        <div class="grid-item">
+          6by1-5
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    fetch('./components/header/header.html')
+      .then(response => response.text())
+      .then(data => document.querySelector('#header').innerHTML = data);
+  </script>
+
+</body>
+</html>
