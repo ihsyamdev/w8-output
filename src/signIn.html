@@ -67,6 +67,15 @@
     fetch('./components/header/header.html')
       .then(response => response.text())
       .then(data => document.querySelector('#header').innerHTML = data);
+    
+    // localStorageからemailとpasswordを取得して、それぞれのinputに入れる
+    document.getElementById('email').value = localStorage.getItem('email');
+    document.getElementById('password').value = localStorage.getItem('password');
+    // emailとpasswordをsubmitしたら、localStorageに保存する
+    document.querySelector('.form-button button').addEventListener('click', () => {
+      localStorage.setItem('email', document.getElementById('email').value);
+      localStorage.setItem('password', document.getElementById('password').value);
+    });
   </script>
 
 </body>
