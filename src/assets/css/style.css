@@ -8,6 +8,7 @@ body {
   color: #333;
 }
 
+/* gridページのCSS */
 .grid {
   display: flex;
   flex-wrap: wrap;
